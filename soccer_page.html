@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Soccer Predictor
+        </title>
+    </head>
+    <body>
+        <p>
+            2020/2021 Premier League Predictor<br/><br/>
+            Choose 2 Teams:
+        </p>
+        <form method='POST'>
+            <input type = "checkbox" name="team" value="Arsenal">
+            <label for="scales">Arsenal</label>
+            <br/><input type = "checkbox" name="team" value="Aston Villa">
+            <label for="scales">Aston Villa</label>
+            <br/><input type = "checkbox" name="team" value="Brighton">
+            <label for="scales">Brighton</label>
+            <br/><input type = "checkbox" name="team" value="Burnley">
+            <label for="scales">Burnley</label>
+            <br/><input type = "checkbox" name="team" value="Chelsea">
+            <label for="scales">Chelsea</label>
+            <br/><input type = "checkbox" name="team" value="Crystal Palace">
+            <label for="scales">Crystal Palace</label>
+            <br/><input type = "checkbox" name="team" value="Everton">
+            <label for="scales">Everton</label>
+            <br/><input type = "checkbox" name="team" value="Fulham">
+            <label for="scales">Fulham</label>
+            <br/><input type = "checkbox" name="team" value="Leeds">
+            <label for="scales">Leeds</label>
+            <br/><input type = "checkbox" name="team" value="Leicester">
+            <label for="scales">Leicester</label>
+            <br/><input type = "checkbox" name="team" value="Liverpool">
+            <label for="scales">Liverpool</label>
+            <br/><input type = "checkbox" name="team" value="Man City">
+            <label for="scales">Man City</label>
+            <br/><input type = "checkbox" name="team" value="Man United">
+            <label for="scales">Man United</label>
+            <br/><input type = "checkbox" name="team" value="Newcastle">
+            <label for="scales">Newcastle</label>
+            <br/><input type = "checkbox" name="team" value="Sheffield United">
+            <label for="scales">Sheffield United</label>
+            <br/><input type = "checkbox" name="team" value="Southampton">
+            <label for="scales">Southampton</label>
+            <br/><input type = "checkbox" name="team" value="Tottenham">
+            <label for="scales">Tottenham</label>
+            <br/><input type = "checkbox" name="team" value="West Brom">
+            <label for="scales">West Brom</label>
+            <br/><input type = "checkbox" name="team" value="West Ham">
+            <label for="scales">West Ham</label>
+            <br/><input type = "checkbox" name="team" value="Wolves">
+            <label for="scales">Wolves</label>
+            <br/><input type = "submit">
+        </form>
+        <p>
+            {{ msg }}<br/><br/>
+            Logression Regression predicted winner (54% Accuracy): {{ prediction_logreg }}<br/><br/>
+            XGBoost predicted winner (57.3% Accuracy): {{ prediction_XGB }}<br/><br/>
+            Support Vector Machine winner (54% Accuracy): {{ prediction_SVC }}
+        </p>
+    </body>
+</html>

@@ -5,8 +5,8 @@
 ![image](https://user-images.githubusercontent.com/83434982/117752308-88294d00-b1e4-11eb-8e74-e1eadb25c04e.png)
 
 # Sources
-Machine learning code inspired from:
-https://github.com/llSourcell/Predicting_Winning_Teams
+Machine learning code inspired from:\
+https://github.com/llSourcell/Predicting_Winning_Teams\
 https://github.com/rsibi/epl-prediction-2017
 
 CSV downloaded from:
